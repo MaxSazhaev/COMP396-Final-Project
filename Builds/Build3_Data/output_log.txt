@@ -1,0 +1,93 @@
+Initialize engine version: 5.3.0f4 (2524e04062b4)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
+    Vendor:   NVIDIA
+    VRAM:     8096 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Max\Desktop\Final Project\Builds\Build3_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Max\Desktop\Final Project\Builds\Build3_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Max\Desktop\Final Project\Builds\Build3_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Max\Desktop\Final Project\Builds\Build3_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Max\Desktop\Final Project\Builds\Build3_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Max\Desktop\Final Project\Builds\Build3_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Max\Desktop\Final Project\Builds\Build3_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Max\Desktop\Final Project\Builds\Build3_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Max\Desktop\Final Project\Builds\Build3_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Max\Desktop\Final Project\Builds\Build3_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Max\Desktop\Final Project\Builds\Build3_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Max\Desktop\Final Project\Builds\Build3_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.040 seconds
+Platform assembly: C:\Users\Max\Desktop\Final Project\Builds\Build3_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Max\Desktop\Final Project\Builds\Build3_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 144Hz; virtual: 3600x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.565103 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at Menu.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 4b98 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.434665 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 274.
+Total: 0.132617 ms (FindLiveObjects: 0.013796 ms CreateObjectMapping: 0.005349 ms MarkObjects: 0.105868 ms  DeleteObjects: 0.007039 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.385463 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2392.
+Total: 0.291702 ms (FindLiveObjects: 0.052934 ms CreateObjectMapping: 0.012388 ms MarkObjects: 0.208640 ms  DeleteObjects: 0.017175 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.857650 ms
+
+Unloading 59 unused Assets to reduce memory usage. Loaded Objects now: 258.
+Total: 0.539480 ms (FindLiveObjects: 0.008446 ms CreateObjectMapping: 0.007039 ms MarkObjects: 0.123044 ms  DeleteObjects: 0.400668 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Menu.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.400668 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 275.
+Total: 0.164434 ms (FindLiveObjects: 0.016330 ms CreateObjectMapping: 0.006194 ms MarkObjects: 0.131491 ms  DeleteObjects: 0.009854 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.317324 ms
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 258.
+Total: 0.160774 ms (FindLiveObjects: 0.009854 ms CreateObjectMapping: 0.006757 ms MarkObjects: 0.120791 ms  DeleteObjects: 0.023088 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Menu.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.344636 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 275.
+Total: 0.132054 ms (FindLiveObjects: 0.010417 ms CreateObjectMapping: 0.005631 ms MarkObjects: 0.109247 ms  DeleteObjects: 0.006476 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.347170 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2393.
+Total: 0.262138 ms (FindLiveObjects: 0.048147 ms CreateObjectMapping: 0.012107 ms MarkObjects: 0.184707 ms  DeleteObjects: 0.016893 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.994491 ms
+
+Unloading 60 unused Assets to reduce memory usage. Loaded Objects now: 197.
+Total: 0.537228 ms (FindLiveObjects: 0.008165 ms CreateObjectMapping: 0.005349 ms MarkObjects: 0.097421 ms  DeleteObjects: 0.426009 ms)
+

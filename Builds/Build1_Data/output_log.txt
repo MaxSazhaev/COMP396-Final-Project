@@ -1,0 +1,35 @@
+Initialize engine version: 5.3.0f4 (2524e04062b4)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 7800 Series (ID=0x6819)
+    Vendor:   ATI
+    VRAM:     1006 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Max\Desktop\Final-Assignment-master\Final Project\Build1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Max\Desktop\Final-Assignment-master\Final Project\Build1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Max\Desktop\Final-Assignment-master\Final Project\Build1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Max\Desktop\Final-Assignment-master\Final Project\Build1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Max\Desktop\Final-Assignment-master\Final Project\Build1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Max\Desktop\Final-Assignment-master\Final Project\Build1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Max\Desktop\Final-Assignment-master\Final Project\Build1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Max\Desktop\Final-Assignment-master\Final Project\Build1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Max\Desktop\Final-Assignment-master\Final Project\Build1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Max\Desktop\Final-Assignment-master\Final Project\Build1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Max\Desktop\Final-Assignment-master\Final Project\Build1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Max\Desktop\Final-Assignment-master\Final Project\Build1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.038 seconds
+Platform assembly: C:\Users\Max\Desktop\Final-Assignment-master\Final Project\Build1_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Max\Desktop\Final-Assignment-master\Final Project\Build1_Data\Managed\System.dll (this message is harmless)
+desktop: 1680x1050 60Hz; virtual: 1680x1050 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.510855 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at Menu.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 29a4 -> priority: 1 

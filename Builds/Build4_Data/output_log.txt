@@ -1,0 +1,41 @@
+Initialize engine version: 5.6.3p2 (b3d7a6428558)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
+    Vendor:   NVIDIA
+    VRAM:     8096 MB
+    Driver:   23.21.13.8871
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Max\Desktop\Final Project COMP 305\COMP305-Final-Project\Builds\Build4_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Max\Desktop\Final Project COMP 305\COMP305-Final-Project\Builds\Build4_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Max\Desktop\Final Project COMP 305\COMP305-Final-Project\Builds\Build4_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Max\Desktop\Final Project COMP 305\COMP305-Final-Project\Builds\Build4_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Max\Desktop\Final Project COMP 305\COMP305-Final-Project\Builds\Build4_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Max\Desktop\Final Project COMP 305\COMP305-Final-Project\Builds\Build4_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Max\Desktop\Final Project COMP 305\COMP305-Final-Project\Builds\Build4_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Max\Desktop\Final Project COMP 305\COMP305-Final-Project\Builds\Build4_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Max\Desktop\Final Project COMP 305\COMP305-Final-Project\Builds\Build4_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Max\Desktop\Final Project COMP 305\COMP305-Final-Project\Builds\Build4_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.016 seconds
+Platform assembly: C:\Users\Max\Desktop\Final Project COMP 305\COMP305-Final-Project\Builds\Build4_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Max\Desktop\Final Project COMP 305\COMP305-Final-Project\Builds\Build4_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 144Hz; virtual: 3600x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.748965 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at Menu.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 5668 -> priority: 1 
+  Thread -> id: 3b5c -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.348102 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 983.
+Total: 4.654287 ms (FindLiveObjects: 0.038292 ms CreateObjectMapping: 0.016330 ms MarkObjects: 0.149793 ms  DeleteObjects: 4.449307 ms)
+
