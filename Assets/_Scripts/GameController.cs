@@ -15,7 +15,9 @@ public class GameController : MonoBehaviour {
 	public Text lifeLabel;
     public Text timeLabel;
 
-	// PRIVATE INSTANCE VARIABLES
+    // PRIVATE INSTANCE VARIABLES
+    private float time = 0.0f;
+    private float threshold = 1.0f;
     float seconds = 0f;
     float minutes = 0f;
     float newSeconds = 0f;
@@ -52,7 +54,6 @@ public class GameController : MonoBehaviour {
 	// Update is called once per frame
     void Update()
     {
-
         seconds = Time.realtimeSinceStartup - newSeconds;
         if (seconds > 60)
         {
@@ -61,8 +62,19 @@ public class GameController : MonoBehaviour {
             minutes++;
         }
 
-
         timeLabel.text = "Time : " + (int)minutes + " : " + (int)seconds;
+
+        time += Time.deltaTime;
+        if (time >= threshold)
+        {
+            time = 0.0f;
+            _liveValue = _liveValue - 10;
+            UpdateLife();
+            if (_liveValue <= 0)
+            {
+                Application.LoadLevel(3);
+            }
+        }
 
     }
 
@@ -79,14 +91,10 @@ public class GameController : MonoBehaviour {
         UpdateScore();
     }
     // Subtracts Life
-    public void SubtractLife(int newLifeValue)
+    public void AddLife(int newLifeValue)
     {
         _liveValue += newLifeValue;
         UpdateLife();
-        if (_liveValue == 0)
-        {
-            Application.LoadLevel(3);
-        }
     }
 
     void UpdateLife()
