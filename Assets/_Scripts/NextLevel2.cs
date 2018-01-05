@@ -8,12 +8,18 @@ using UnityEngine;
 using System.Collections;
 
 public class NextLevel2 : MonoBehaviour {
+    private int numberConverted = 0;
+    public int numberToContinue;
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.tag == "Player")
+        if (col.tag == "Man")
         {
-            Application.LoadLevel(4);
+            numberConverted++;
+            if(numberConverted >= numberToContinue)
+            {
+                Application.LoadLevel(4);
+            }
         }
     }
 }

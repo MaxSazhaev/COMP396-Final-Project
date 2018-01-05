@@ -7,7 +7,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class ZombieCollision : MonoBehaviour {
+public class ManCollision : MonoBehaviour {
 
     private GameController gameController;
     private int lifeValue = 20;

@@ -23,6 +23,6 @@ public class EnemyAI : MonoBehaviour {
             , Quaternion.LookRotation(tr_Player.position - transform.position)
             , f_RotSpeed * Time.deltaTime);
 
-        transform.position += transform.forward * f_MoveSpeed * Time.deltaTime;
+        transform.position -= transform.forward * f_MoveSpeed * Time.deltaTime;
     }
 }

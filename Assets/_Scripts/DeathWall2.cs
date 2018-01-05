@@ -17,5 +17,11 @@ public class DeathWall2 : MonoBehaviour
             // Send to death screen 2
             Application.LoadLevel(5);
         }
+        /*
+        if (col.tag == "Man")
+        {
+            Destroy(GameObject.FindWithTag("Man"));
+        }
+        */
     }
 }
