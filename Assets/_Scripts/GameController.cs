@@ -7,6 +7,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 
@@ -14,6 +15,8 @@ public class GameController : MonoBehaviour {
 	public Text scoreLabel;
 	public Text lifeLabel;
     public Text timeLabel;
+    public Text remainingLabel;
+    
 
     // PRIVATE INSTANCE VARIABLES
     private float time = 0.0f;
@@ -23,6 +26,7 @@ public class GameController : MonoBehaviour {
     float newSeconds = 0f;
 	private int _scoreValue = 0;
 	private int _liveValue = 100;
+    public int _remainingValue;
 
 	// PUBLIC PROPERTIES
 	public int Score {
@@ -35,7 +39,20 @@ public class GameController : MonoBehaviour {
 		}
 	}
 
-	public int Life {
+    public int Remaining
+    {
+        get
+        {
+            return _remainingValue;
+        }
+        set
+        {
+            _remainingValue = value;
+            this._updateHUD();
+        }
+    }
+
+    public int Life {
 		get {
 			return _liveValue;
 		}
@@ -47,6 +64,21 @@ public class GameController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+        //Debug.Log(sceneName);
+        if (sceneName == "Level1")
+        {
+            _remainingValue = 10;
+        }
+        else if (sceneName == "Level2")
+        {
+            _remainingValue = 4;
+        }
+        else if (sceneName == "Level3")
+        {
+            _remainingValue = 2;
+        }
         newSeconds = Time.realtimeSinceStartup;
 		this._updateHUD ();
 	}
@@ -82,6 +114,7 @@ public class GameController : MonoBehaviour {
 	private void _updateHUD() {
 		this.scoreLabel.text = "Score: " + this._scoreValue;
 		this.lifeLabel.text = "Life: " + this._liveValue;
+        this.remainingLabel.text = "Humans Left: " + this._remainingValue;
 	}
 
     // Adds score to existing score
@@ -89,6 +122,12 @@ public class GameController : MonoBehaviour {
     {
         _scoreValue += newScoreValue;
         UpdateScore();
+    }
+
+    public void SubtractRemaining(int newRemainingValue)
+    {
+        _remainingValue -= newRemainingValue;
+        UpdateRemaining();
     }
     // Subtracts Life
     public void AddLife(int newLifeValue)
@@ -106,6 +145,11 @@ public class GameController : MonoBehaviour {
     void UpdateScore()
     {
         scoreLabel.text = "Score: " + _scoreValue;
+    }
+
+    void UpdateRemaining()
+    {
+        remainingLabel.text = "Humans Left: " + _remainingValue;
     }
 
 }
