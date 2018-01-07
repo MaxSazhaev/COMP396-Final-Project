@@ -40,8 +40,17 @@ public class Menu2 : MonoBehaviour
     public void StartLevel()
     {
         Scene currentScene = SceneManager.GetActiveScene();
-        string sceneName = PlayerPrefs.GetString("lastLoadedScene");
-        SceneManager.LoadScene(sceneName);
+        string currentSceneName = currentScene.name;
+        if(currentSceneName == "Death")
+        {
+            string sceneName = PlayerPrefs.GetString("lastLoadedScene");
+            SceneManager.LoadScene(sceneName);
+        }
+        else if(currentSceneName == "Finish")
+        {
+            SceneManager.LoadScene("Menu");
+        }
+        
     }
 
     public void ExitGame()

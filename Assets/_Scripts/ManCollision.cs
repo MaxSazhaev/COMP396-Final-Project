@@ -13,7 +13,7 @@ public class ManCollision : MonoBehaviour {
     private GameController gameController;
     private int lifeValue = 20;
     public int scoreValue = 1000;
-    private int remainingValue = 1;
+    public int remainingValue = 1;
     public GameObject[] zombieClone;
     public GameObject[] zombiePrefab;
     //public Transform[] spawnPoint;
@@ -37,8 +37,9 @@ public class ManCollision : MonoBehaviour {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
         // If the zombie collides with player it takes away health
-        if (other.tag == "Player")
+        if (other.tag == "Player" || other.tag == "Enemy")
         {
+            Debug.Log("test coll");
             //Instantiate(prefab, c.transform.position, someRotation);
             if (this.tag == "Man")
             {
