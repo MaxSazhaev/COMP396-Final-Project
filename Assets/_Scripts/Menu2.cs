@@ -7,6 +7,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Menu2 : MonoBehaviour
 {
@@ -38,7 +39,9 @@ public class Menu2 : MonoBehaviour
 
     public void StartLevel()
     {
-        Application.LoadLevel(2);
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = PlayerPrefs.GetString("lastLoadedScene");
+        SceneManager.LoadScene(sceneName);
     }
 
     public void ExitGame()

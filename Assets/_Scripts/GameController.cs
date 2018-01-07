@@ -69,14 +69,17 @@ public class GameController : MonoBehaviour {
         //Debug.Log(sceneName);
         if (sceneName == "Level1")
         {
+            PlayerPrefs.SetString("lastLoadedScene", SceneManager.GetActiveScene().name);
             _remainingValue = 10;
         }
         else if (sceneName == "Level2")
         {
+            PlayerPrefs.SetString("lastLoadedScene", SceneManager.GetActiveScene().name);
             _remainingValue = 4;
         }
         else if (sceneName == "Level3")
         {
+            PlayerPrefs.SetString("lastLoadedScene", SceneManager.GetActiveScene().name);
             _remainingValue = 2;
         }
         newSeconds = Time.realtimeSinceStartup;

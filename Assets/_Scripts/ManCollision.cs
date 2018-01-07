@@ -47,6 +47,10 @@ public class ManCollision : MonoBehaviour {
                 {
                     Application.LoadLevel(4);
                 }
+                if (gameController._remainingValue <= 0 && sceneName == "Level3")
+                {
+                    Application.LoadLevel(5);
+                }
                 gameController.AddScore(scoreValue);
                 gameController.AddLife(lifeValue);
                 SpawnZombie();

@@ -6,13 +6,15 @@
 
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
-public class DeathWall : MonoBehaviour {
-
+public class DeathWall : MonoBehaviour
+{
     void OnTriggerEnter(Collider col)
     {
         if (col.tag == "Player")
         {
+            PlayerPrefs.SetString("lastLoadedScene", SceneManager.GetActiveScene().name);
             // Send to death screen 1
             Application.LoadLevel(3);
         }

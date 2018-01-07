@@ -117,7 +117,6 @@
     <Compile Include="Assets\_Imported Assets\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\_Imported Assets\Utility\WaypointProgressTracker.cs" />
     <Compile Include="Assets\_Scripts\DeathWall.cs" />
-    <Compile Include="Assets\_Scripts\DeathWall2.cs" />
     <Compile Include="Assets\_Scripts\Finish.cs" />
     <Compile Include="Assets\_Scripts\GameController.cs" />
     <Compile Include="Assets\_Scripts\HumanAI.cs" />
@@ -127,6 +126,7 @@
     <Compile Include="Assets\_Scripts\NextLevel.cs" />
     <Compile Include="Assets\_Scripts\NextLevel2.cs" />
     <Compile Include="Assets\_Scripts\Pickup.cs" />
+    <Compile Include="Assets\_Scripts\Raycaster.cs" />
     <Compile Include="Assets\_Scripts\ZombieAI.cs" />
     <Compile Include="Assets\_Scripts\animController.cs" />
   </ItemGroup>
