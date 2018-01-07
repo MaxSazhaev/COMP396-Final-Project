@@ -128,6 +128,7 @@
     <Compile Include="Assets\_Scripts\Pickup.cs" />
     <Compile Include="Assets\_Scripts\Raycaster.cs" />
     <Compile Include="Assets\_Scripts\ZombieAI.cs" />
+    <Compile Include="Assets\_Scripts\ZombieControl.cs" />
     <Compile Include="Assets\_Scripts\animController.cs" />
   </ItemGroup>
   <ItemGroup>

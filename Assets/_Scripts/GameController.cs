@@ -103,7 +103,7 @@ public class GameController : MonoBehaviour {
         if (time >= threshold)
         {
             time = 0.0f;
-            _liveValue = _liveValue - 10;
+            _liveValue = _liveValue - 2;
             UpdateLife();
             if (_liveValue <= 0)
             {
