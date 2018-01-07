@@ -7,7 +7,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class EnemyAI : MonoBehaviour {
+public class HumanAI : MonoBehaviour {
 
     Transform tr_Player;
     float f_RotSpeed = 3.0f, f_MoveSpeed = 3.0f;

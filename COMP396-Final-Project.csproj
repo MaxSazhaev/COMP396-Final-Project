@@ -118,15 +118,17 @@
     <Compile Include="Assets\_Imported Assets\Utility\WaypointProgressTracker.cs" />
     <Compile Include="Assets\_Scripts\DeathWall.cs" />
     <Compile Include="Assets\_Scripts\DeathWall2.cs" />
-    <Compile Include="Assets\_Scripts\EnemyAI.cs" />
     <Compile Include="Assets\_Scripts\Finish.cs" />
     <Compile Include="Assets\_Scripts\GameController.cs" />
+    <Compile Include="Assets\_Scripts\HumanAI.cs" />
     <Compile Include="Assets\_Scripts\ManCollision.cs" />
     <Compile Include="Assets\_Scripts\Menu.cs" />
     <Compile Include="Assets\_Scripts\Menu2.cs" />
     <Compile Include="Assets\_Scripts\NextLevel.cs" />
     <Compile Include="Assets\_Scripts\NextLevel2.cs" />
     <Compile Include="Assets\_Scripts\Pickup.cs" />
+    <Compile Include="Assets\_Scripts\ZombieAI.cs" />
+    <Compile Include="Assets\_Scripts\animController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Models\ghoul\shader\ghoulshader.shader" />
