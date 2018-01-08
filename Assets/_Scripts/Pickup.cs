@@ -11,10 +11,13 @@ public class Pickup : MonoBehaviour {
 
     public int scoreValue;
     private GameController gameController;
+    public AudioClip pickup;
 
     // Use this for initialization
     void Start()
     {
+        GetComponent<AudioSource>().playOnAwake = false;
+        GetComponent<AudioSource>().clip = pickup;
         GameObject gameControllerObject = GameObject.FindWithTag("GameController");
         if (gameControllerObject != null)
         {
@@ -31,6 +34,8 @@ public class Pickup : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
+            
+            AudioSource.PlayClipAtPoint(pickup, transform.position, 0.2f);
             gameController.AddScore(scoreValue);
             Destroy(gameObject);
         }

@@ -3,7 +3,7 @@
  * Creation Date: December 18th 2015
  * Description: This script controls the collision between the car and the player.
  */
-
+ //for the car but were not using car
 using UnityEngine;
 using System.Collections;
 

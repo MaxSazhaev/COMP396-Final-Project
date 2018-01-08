@@ -12,9 +12,12 @@ public class DeathWall : MonoBehaviour
 {
     public int remainingValue = 1;
     private GameController gameController;
+    
 
     void Start()
     {
+       
+        
         GameObject gameControllerObject = GameObject.FindWithTag("GameController");
         if (gameControllerObject != null)
         {
@@ -26,6 +29,7 @@ public class DeathWall : MonoBehaviour
     {
         if (col.tag == "Player")
         {
+            
             PlayerPrefs.SetString("lastLoadedScene", SceneManager.GetActiveScene().name);
             // Send to death screen 1
             Application.LoadLevel(3);

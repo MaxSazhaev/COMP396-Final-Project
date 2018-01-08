@@ -18,13 +18,14 @@ public class GameController : MonoBehaviour {
     public Text remainingLabel;
     
 
+
     // PRIVATE INSTANCE VARIABLES
     private float time = 0.0f;
     private float threshold = 1.0f;
     float seconds = 0f;
     float minutes = 0f;
     float newSeconds = 0f;
-	private int _scoreValue = 0;
+	public int _scoreValue = 0;
 	private int _liveValue = 100;
     public int _remainingValue;
 
