@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour {
 	public Text lifeLabel;
     public Text timeLabel;
     public Text remainingLabel;
+    public int subtractLifeAmount = 2;
     
 
 
@@ -104,7 +105,7 @@ public class GameController : MonoBehaviour {
         if (time >= threshold)
         {
             time = 0.0f;
-            _liveValue = _liveValue - 2;
+            _liveValue = _liveValue - subtractLifeAmount;
             UpdateLife();
             if (_liveValue <= 0)
             {

@@ -61,6 +61,7 @@ public class ManCollision : MonoBehaviour {
                 }
                 if (gameController._remainingValue <= 0 && sceneName == "Level3")
                 {
+                    PlayerPrefs.SetInt("finished", 1);
                     GameObject thePlayer = GameObject.Find("Game Controller");
                     GameController playerScript = thePlayer.GetComponent<GameController>();
                     PlayerPrefs.SetInt("score", playerScript._scoreValue + PlayerPrefs.GetInt("score", 0));

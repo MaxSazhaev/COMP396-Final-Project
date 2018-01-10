@@ -23,9 +23,9 @@ public class Menu2 : MonoBehaviour
         startText2 = startText2.GetComponent<Button>();
         exitText2 = exitText2.GetComponent<Button>();
         scoreText = scoreText.GetComponent<Text>();
+        quitMenu2.enabled = false;
         scoreText.text = "Final Score: " + PlayerPrefs.GetInt("score", 0);
         PlayerPrefs.SetInt("score", 0);
-        quitMenu2.enabled = false;
         GetComponent<AudioSource>().playOnAwake = false;
         GetComponent<AudioSource>().clip = death;
         AudioSource.PlayClipAtPoint(death, transform.position);

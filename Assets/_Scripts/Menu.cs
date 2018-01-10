@@ -10,6 +10,7 @@ using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
+    public int finished;
     public Canvas quitMenu;
     public Button optionsText;
     public Canvas optionsMenu;
@@ -17,10 +18,19 @@ public class Menu : MonoBehaviour
     public Button exitText;
     public Canvas instructionMenu;
     public Button instructionText;
+    public Button medium;
+    public Button hard;
     public int difficulty;
+    private GameController gameController;
 
     void Start()
     {
+        GameObject gameControllerObject = GameObject.FindWithTag("GameController");
+        if (gameControllerObject != null)
+        {
+            gameController = gameControllerObject.GetComponent<GameController>();
+        }
+        
         difficulty = 1;
         quitMenu = quitMenu.GetComponent<Canvas>();
         quitMenu.enabled = false;
@@ -29,7 +39,8 @@ public class Menu : MonoBehaviour
         optionsMenu = optionsMenu.GetComponent<Canvas>();
         instructionMenu = instructionMenu.GetComponent<Canvas>();
         instructionText = instructionText.GetComponent<Button>();
-        optionsText = instructionText.GetComponent<Button>();
+        hard = hard.GetComponent<Button>();
+        medium = medium.GetComponent<Button>();
         optionsMenu.enabled = false;
         instructionMenu.enabled = false;
     }
@@ -45,6 +56,17 @@ public class Menu : MonoBehaviour
 
     public void OptionsPress()
     {
+        finished = PlayerPrefs.GetInt("finished", 0);
+        if (finished == 1)
+        {
+            medium.enabled = true;
+            hard.enabled = true;
+        }
+        else
+        {
+            medium.enabled = false;
+            hard.enabled = false;
+        }
         optionsMenu.enabled = true;
         instructionText.enabled = false;
         startText.enabled = false;
@@ -123,20 +145,33 @@ public class Menu : MonoBehaviour
 
     public void StartLevel()
     {
-        if(difficulty == 1)
+        //GameObject thePlayer = GameObject.Find("Game Controller");
+        //GameController playerScript = thePlayer.GetComponent<GameController>();
+        if (difficulty == 1)
         {
+            //finished = 0;
+            //playerScript.subtractLifeAmount = 2;
+            PlayerPrefs.SetInt("finished", 0);
             Application.LoadLevel(1);
         }
         else if(difficulty == 2)
         {
+            //finished = 0;
+            //playerScript.subtractLifeAmount = 5;
+            PlayerPrefs.SetInt("finished", 0);
             Application.LoadLevel(2);
         }
         else if (difficulty == 3)
         {
+            //finished = 0;
+            //playerScript.subtractLifeAmount = 10;
+            PlayerPrefs.SetInt("finished", 0);
             Application.LoadLevel(4);
         }
         else
         {
+            //finished = 0;
+            PlayerPrefs.SetInt("finished", 0);
             Application.LoadLevel(1);
         }
     }
