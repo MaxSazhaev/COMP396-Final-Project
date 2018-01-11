@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/* Author: Max Sazhaev
+ * File: HumanAI.cs
+ * Creation Date: December 18th 2017
+ * Description: This script controls way zombies move where you tell them.
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.AI;
 using UnityEngine;

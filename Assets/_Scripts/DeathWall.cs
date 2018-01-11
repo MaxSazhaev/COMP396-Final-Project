@@ -1,6 +1,6 @@
-﻿/* Author: Max Sazhaev, Joshua Korovesi
+﻿/* Author: Max Sazhaev
  * File: Deathwall.cs
- * Creation Date: December 18th 2015
+ * Creation Date: December 18th 2017
  * Description: This script controls the collision between the instant death area and the player.
  */
 

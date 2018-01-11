@@ -1,6 +1,6 @@
-﻿/* Author: Max Sazhaev, Joshua Korovesi
+﻿/* Author: Max Sazhaev
  * File: NextLevel.cs
- * Creation Date: December 18th 2015
+ * Creation Date: December 18th 2017
  * Description: This script controls the collision between the door and player on the first level.
  */
 
@@ -25,7 +25,6 @@ public class NextLevel : MonoBehaviour {
             GameObject thePlayer = GameObject.Find("Game Controller");
             GameController playerScript = thePlayer.GetComponent<GameController>();
             PlayerPrefs.SetInt("score", playerScript._scoreValue);
-            Debug.Log(playerScript._scoreValue);
             Application.LoadLevel(2);
         }
     }

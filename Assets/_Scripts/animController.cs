@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/* Author: Max Sazhaev
+ * File: animController.cs
+ * Creation Date: December 18th 2017
+ * Description: This script controls the animation of the character.
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

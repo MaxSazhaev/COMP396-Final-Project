@@ -1,7 +1,7 @@
-﻿/* Author: Max Sazhaev, Joshua Korovesi
+﻿/* Author: Max Sazhaev
  * File: Menu2.cs
- * Creation Date: December 18th 2015
- * Description: This script controls the functionality of the menu.
+ * Creation Date: December 18th 2017
+ * Description: This script controls the functionality of the death and finish menu.
  */
 
 using UnityEngine;

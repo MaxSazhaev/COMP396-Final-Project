@@ -1,6 +1,6 @@
-﻿/* Author: Max Sazhaev, Joshua Korovesi
+﻿/* Author: Max Sazhaev
  * File: Menu.cs
- * Creation Date: December 18th 2015
+ * Creation Date: December 18th 2017
  * Description: This script controls the functionality of the menu.
  */
 
@@ -145,35 +145,32 @@ public class Menu : MonoBehaviour
 
     public void StartLevel()
     {
-        //GameObject thePlayer = GameObject.Find("Game Controller");
-        //GameController playerScript = thePlayer.GetComponent<GameController>();
         if (difficulty == 1)
         {
-            //finished = 0;
-            //playerScript.subtractLifeAmount = 2;
-            PlayerPrefs.SetInt("finished", 0);
-            Application.LoadLevel(1);
+            PlayerPrefs.SetInt("subLife", 2);
+            PlayerPrefs.SetInt("scorePickup", 100);
+            PlayerPrefs.SetInt("scoreConvert", 1000);
         }
         else if(difficulty == 2)
         {
-            //finished = 0;
-            //playerScript.subtractLifeAmount = 5;
-            PlayerPrefs.SetInt("finished", 0);
-            Application.LoadLevel(2);
+            PlayerPrefs.SetInt("subLife", 5);
+            PlayerPrefs.SetInt("scorePickup", 200);
+            PlayerPrefs.SetInt("scoreConvert", 2000);
         }
         else if (difficulty == 3)
         {
-            //finished = 0;
-            //playerScript.subtractLifeAmount = 10;
-            PlayerPrefs.SetInt("finished", 0);
-            Application.LoadLevel(4);
+            PlayerPrefs.SetInt("subLife", 10);
+            PlayerPrefs.SetInt("scorePickup", 400);
+            PlayerPrefs.SetInt("scoreConvert", 4000);
         }
         else
         {
-            //finished = 0;
-            PlayerPrefs.SetInt("finished", 0);
-            Application.LoadLevel(1);
+            PlayerPrefs.SetInt("subLife", 2);
+            PlayerPrefs.SetInt("scorePickup", 100);
+            PlayerPrefs.SetInt("scoreConvert", 1000);
         }
+        PlayerPrefs.SetInt("finished", 0);
+        Application.LoadLevel(1);
     }
 
     public void ExitGame()

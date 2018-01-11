@@ -1,7 +1,7 @@
-﻿/* Author: Max Sazhaev, Joshua Korovesi
+﻿/* Author: Max Sazhaev
  * File: GameController.cs
- * Creation Date: December 18th 2015
- * Description: This script controls the way the player functions, life, score, and time.
+ * Creation Date: December 18th 2017
+ * Description: This script controls the way the player functions, life, score, amount left, and time.
  */
 
 using UnityEngine;
@@ -17,8 +17,8 @@ public class GameController : MonoBehaviour {
     public Text timeLabel;
     public Text remainingLabel;
     public int subtractLifeAmount = 2;
-    
-
+    public int _scoreValue = 0;
+    public int _remainingValue;
 
     // PRIVATE INSTANCE VARIABLES
     private float time = 0.0f;
@@ -26,9 +26,7 @@ public class GameController : MonoBehaviour {
     float seconds = 0f;
     float minutes = 0f;
     float newSeconds = 0f;
-	public int _scoreValue = 0;
 	private int _liveValue = 100;
-    public int _remainingValue;
 
 	// PUBLIC PROPERTIES
 	public int Score {
@@ -68,7 +66,7 @@ public class GameController : MonoBehaviour {
 	void Start () {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-        //Debug.Log(sceneName);
+        subtractLifeAmount = PlayerPrefs.GetInt("subLife", 0);
         if (sceneName == "Level1")
         {
             PlayerPrefs.SetString("lastLoadedScene", SceneManager.GetActiveScene().name);
@@ -82,6 +80,7 @@ public class GameController : MonoBehaviour {
         else if (sceneName == "Level3")
         {
             PlayerPrefs.SetString("lastLoadedScene", SceneManager.GetActiveScene().name);
+            
             _remainingValue = 2;
         }
         newSeconds = Time.realtimeSinceStartup;

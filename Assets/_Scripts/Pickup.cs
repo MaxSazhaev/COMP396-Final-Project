@@ -1,6 +1,6 @@
-﻿/* Author: Max Sazhaev, Joshua Korovesi
+﻿/* Author: Max Sazhaev
  * File: Pickup.cs
- * Creation Date: December 18th 2015
+ * Creation Date: December 18th 2017
  * Description: This script controls the functionality of collecting gas cans.
  */
 
@@ -16,6 +16,7 @@ public class Pickup : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        scoreValue = PlayerPrefs.GetInt("scorePickup", 0);
         GetComponent<AudioSource>().playOnAwake = false;
         GetComponent<AudioSource>().clip = pickup;
         GameObject gameControllerObject = GameObject.FindWithTag("GameController");

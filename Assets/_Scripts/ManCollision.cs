@@ -1,6 +1,6 @@
-﻿/* Author: Max Sazhaev, Joshua Korovesi
+﻿/* Author: Max Sazhaev
  * File: ZombieCollision.cs
- * Creation Date: December 18th 2015
+ * Creation Date: December 18th 2017
  * Description: This script controls the collision between the player and the enemy.
  */
 
@@ -17,14 +17,11 @@ public class ManCollision : MonoBehaviour {
     public GameObject[] zombieClone;
     public GameObject[] zombiePrefab;
     public AudioClip conversion;
-    //public Transform[] spawnPoint;
-
-    
 
     // Use this for initialization
     void Start()
     {
-
+        scoreValue = PlayerPrefs.GetInt("scoreConvert", 0);
         GetComponent<AudioSource>().playOnAwake = false;
         GetComponent<AudioSource>().clip = conversion;
         GameObject gameControllerObject = GameObject.FindWithTag("GameController");
@@ -41,11 +38,8 @@ public class ManCollision : MonoBehaviour {
         // If the zombie collides with player it takes away health
         if (other.tag == "Player" || other.tag == "Enemy")
         {
-            //Debug.Log("test coll");
-            //Instantiate(prefab, c.transform.position, someRotation);
             if (this.tag == "Man")
             {
-                //GetComponent<AudioSource>().Play();
                 AudioSource.PlayClipAtPoint(conversion, transform.position, 0.5f);
                 gameController.SubtractRemaining(remainingValue);
                 gameController.AddScore(scoreValue);
@@ -55,8 +49,6 @@ public class ManCollision : MonoBehaviour {
                     GameObject thePlayer = GameObject.Find("Game Controller");
                     GameController playerScript = thePlayer.GetComponent<GameController>();
                     PlayerPrefs.SetInt("score", playerScript._scoreValue + PlayerPrefs.GetInt("score", 0));
-                    //Debug.Log(playerScript._scoreValue);
-                    //Debug.Log(PlayerPrefs.GetInt("score", 0));
                     Application.LoadLevel(4);
                 }
                 if (gameController._remainingValue <= 0 && sceneName == "Level3")
@@ -65,8 +57,6 @@ public class ManCollision : MonoBehaviour {
                     GameObject thePlayer = GameObject.Find("Game Controller");
                     GameController playerScript = thePlayer.GetComponent<GameController>();
                     PlayerPrefs.SetInt("score", playerScript._scoreValue + PlayerPrefs.GetInt("score", 0));
-                    //Debug.Log(playerScript._scoreValue);
-                    //Debug.Log(PlayerPrefs.GetInt("score", 0));
                     Application.LoadLevel(5);
                 }
                 SpawnZombie();

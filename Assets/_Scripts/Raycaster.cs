@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/* Author: Max Sazhaev
+ * File: Raycaster.cs
+ * Creation Date: December 18th 2017
+ * Description: This script controls how you specify a direction and zombie.
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
@@ -11,7 +17,6 @@ public class Raycaster : MonoBehaviour
     private bool M_pressed = false;
     private Camera cam;
     private Dictionary<int, Color> dOrigColors;
-    //private Object dOrigColors2;
     private UnityEngine.AI.NavMeshAgent closest;
     // Use this for initialization
     void Awake()
