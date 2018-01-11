@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 101
+  controlID: 57
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -466,7 +466,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 1a2b00001c2b0000802d00003e2f00005c2e00007a2e0000f02c00008c390000243200007e2d0000402e0000e6310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -559,7 +559,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 343efdff283ffdff7440fdffbc5bfdffc65bfdff9864fdff4678fdff4a78fdffeea9fdff9cbdfdffa0bdfdff6e11ffff6012ffffac13fffff42efffffe2effffd037ffff7c4bffff804bffff5496ffff3e97ffff8e98ffffdab3ffffe8b3ffffbebcffff70d0ffff78d0ffff28d6ffff9efbffff00000000de800000e8a00000
+    m_ExpandedIDs: 78b5ffff62b6ffffaeb7fffffad2ffff04d3ffffdcdbfffff2dbffff00dcffff9efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -578,7 +578,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
   m_ExpandedScenes:
-  - Menu
+  - Level1
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
