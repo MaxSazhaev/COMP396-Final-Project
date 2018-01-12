@@ -1,5 +1,5 @@
-﻿/* Author: Max Sazhaev
- * File: HumanAI.cs
+﻿/* Author: Igor
+ * File: ZombieControl.cs
  * Creation Date: December 18th 2017
  * Description: This script controls way zombies move where you tell them.
  */

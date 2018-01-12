@@ -20,10 +20,10 @@ public class Menu2 : MonoBehaviour
     void Start()
     {
         quitMenu2 = quitMenu2.GetComponent<Canvas>();
+        quitMenu2.enabled = false;
         startText2 = startText2.GetComponent<Button>();
         exitText2 = exitText2.GetComponent<Button>();
         scoreText = scoreText.GetComponent<Text>();
-        quitMenu2.enabled = false;
         scoreText.text = "Final Score: " + PlayerPrefs.GetInt("score", 0);
         PlayerPrefs.SetInt("score", 0);
         GetComponent<AudioSource>().playOnAwake = false;
