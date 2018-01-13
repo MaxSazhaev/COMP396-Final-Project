@@ -12,6 +12,8 @@ using UnityEngine.Networking;
 
 public class GameController : NetworkBehaviour {
 
+    NetworkManager networkManager;
+    
     // PUBLIC INSTANCE VARIABLES
     public Text scoreLabel;
     public Text lifeLabel;
@@ -68,6 +70,8 @@ public class GameController : NetworkBehaviour {
 
     // Use this for initialization
     void Start() {
+        networkManager = GameObject.FindGameObjectWithTag("NetworkManager").GetComponent<NetworkManager>();
+       
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
         //Debug.Log(sceneName);
@@ -89,6 +93,11 @@ public class GameController : NetworkBehaviour {
         newSeconds = Time.realtimeSinceStartup;
         this._updateHUD();
     }
+
+
+    
+
+
 
     // Update is called once per frame
     void Update()
@@ -115,6 +124,13 @@ public class GameController : NetworkBehaviour {
             }
         }
 
+    }
+
+    public void SwitchScene(int scene)
+    {
+        var newScene = SceneManager.GetSceneAt(scene);
+        networkManager.ServerChangeScene(newScene.name);
+        
     }
 
     // PRIVATE METHODS

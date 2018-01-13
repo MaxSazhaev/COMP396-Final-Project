@@ -20,6 +20,7 @@ public class ManCollision : NetworkBehaviour {
     //public Transform[] spawnPoint;
 
     
+    
 
     // Use this for initialization
     void Start()
@@ -58,7 +59,7 @@ public class ManCollision : NetworkBehaviour {
                     PlayerPrefs.SetInt("score", playerScript._scoreValue + PlayerPrefs.GetInt("score", 0));
                     //Debug.Log(playerScript._scoreValue);
                     //Debug.Log(PlayerPrefs.GetInt("score", 0));
-                    Application.LoadLevel(4);
+                    gameController.SwitchScene(4);
                 }
                 if (gameController._remainingValue <= 0 && sceneName == "Level3")
                 {
@@ -67,7 +68,7 @@ public class ManCollision : NetworkBehaviour {
                     PlayerPrefs.SetInt("score", playerScript._scoreValue + PlayerPrefs.GetInt("score", 0));
                     //Debug.Log(playerScript._scoreValue);
                     //Debug.Log(PlayerPrefs.GetInt("score", 0));
-                    Application.LoadLevel(5);
+                    gameController.SwitchScene(5);
                 }
                 CmdSpawnZombie();
                 NetworkServer.Destroy(this.gameObject);

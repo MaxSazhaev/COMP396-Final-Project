@@ -18,7 +18,7 @@ public class Pickup : MonoBehaviour {
     {
         GetComponent<AudioSource>().playOnAwake = false;
         GetComponent<AudioSource>().clip = pickup;
-        GameObject gameControllerObject = GameObject.FindWithTag("GameController");
+        GameObject gameControllerObject = GameObject.FindGameObjectWithTag("GameController");
         if (gameControllerObject != null)
         {
             gameController = gameControllerObject.GetComponent<GameController>();
