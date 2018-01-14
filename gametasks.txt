@@ -1,0 +1,44 @@
+when zombie colides with human he converts him
+	change text music to sounds in options main menu
+	fix comments n random lines in code (remove unused scripts like zombieAi, nextLevel2, finish)
+make the game multiplayer w/ 2 people, spawn points and all that. (might be difficult)
+	easy/medium/ hard difficulty for 3 working levels
+	after easy difficulty done medium and hard unlocks
+	both players could share a health bar or something
+	make a crosshair in the middle?
+	death wall under level 2 and maybe 1 just in case player falls out of lvl
+	make single player build
+	edited controls
+	fix death screen
+
+UPLOAD TO GITHUB BECAUSE LFS NOT WORKING FOR WEBGL FILE Builds.data.unityweb
+
+	show final score in end
+	sound effects for collisions, pickups, conversion, death idk. 
+	fix instructions, background images and put new music
+	get human model and replace zombie models w/ humans
+	make sure you can see zombie model on players
+	control converted zombies (make them move around w/ mouse clicks)
+	make humans evade
+	(make enemies actually run instead of float away)
+	remove door and make end condition an int depending on how many humans in game
+	make humans turn into zombies with touch
+	when you turn to zombie get points.
+	make options screen and instruction screen
+	make a counter how many humans left
+	make respawns at current stage instead of beginning
+	make death wall kill humans
+	make humans turn around when they run away
+	change death so it restarts at current level
+	random reward pickups for extra health?????
+	Do win condition for level 3
+	evasion moves all players and zombies when you get close to one.
+	made Finish scene go back to menu, cleaned up finish scene 
+	fixed ai sliding bug and not obeying commands
+	for health could make it so that it decreases gradually and increases once you convert a human
+	change stage 3 to wall it off to 1 part. find out pathfinding so the enemies travel around objects
+
+	external doc like programming 1. its a bit different than the doc for practical game design
+	design doc for practical game design
+	presentation ppt
+	zip archive of webGL build on e.centennial??? 
